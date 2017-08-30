@@ -1,0 +1,22 @@
+.jumbotron{
+	text-align: center;
+	color: brown;
+	background: transparent;
+}
+.navbar {
+   
+   background: transparent;
+   border-color: blue;
+}
+
+.navbar li { color: #000 }
+
+.icon-bar {
+   background-color: blue !important;
+}
+.intro{
+	height: 30vh;
+}
+#btn2{
+	background-color: yellow;
+}
