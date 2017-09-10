@@ -6,7 +6,7 @@
 .navbar {
    
    background: transparent;
-   border-color: blue;
+   border-color: red;
 }
 
 .navbar li { color: #000 }
@@ -17,6 +17,6 @@
 .intro{
 	height: 30vh;
 }
-#btn2{
+#btn{
 	background-color: yellow;
 }
