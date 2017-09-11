@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Landing Page</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- My css-->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<!-- Angular js libary-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+</head>
+<body style="background-color: #292a2b; color: white;">
+<!-- menu tabs -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Brand Name Here</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Want this design</a></li> 
+        <li><a href="#">Link 2</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container" style="height: 40vh;">
+	<div class="jumbotron" style="background-color: #8a8d91;">
+		<h3 class="intro text-center">Your Text Here
+        <p>Alittle about our company lorem isporium... </p></h3> 
+	</div>
+</div>
+<br>
+
+<div class="container text-center" style="height: 30vh;">
+  <div class="row">
+    <div class="col-sm-6">
+      	<h2>Interactive Design</h2>
+		<button class="btn btn-success" id="btn2">Learn More?</button>
+    </div>
+    <div class="col-sm-6">
+    <h2>Fun Designs</h2>
+		<button class="btn btn-primary" id="btn">Click here to learn more</button>
+	
+         </div>
+    </div>
+ </div>
+
+<script>
+	$("#btn2").click(function(){
+		alert('Fully working Templates made by yours truly');
+	});
+</script>
+<script>
+	$("#btn").click(function(){
+		alert('Every website should be attractive');
+	});
+</script>
+
+</body>
+</html>
+
