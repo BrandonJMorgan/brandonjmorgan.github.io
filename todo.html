@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html ng-app="todoApp">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
 	  <script src="todo.js"></script>
     <link rel="stylesheet" href="todo.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Brandons ToDo List</title>
 	<style type="text/css">
 		body{
-			background-color: grey;
-			color: blue;
+			background-color: white;
+			color: black;
 		}
 	</style>
 </head>
 <!-- Check -->
 
 <body>
-	<center>
-	<h1>todo</h1>
+	<div class="container text-center">
+	<h1>Todo App</h1>
 	<div ng-controller="TodoListController as todoList">
 	 <span>{{todoList.remaining()}} of {{todoList.todos.length}} remaining add some chores</span>
 	[ <a href="" ng-click="todoList.archive()">Delete task</a>]
-		<ul class="unstyled">
+		<ul>
 			<li ng-repeat="todo in todoList.todos">
 				<label class="checkbox">
 					<input type="checkbox" ng-model="todo.done">
@@ -31,10 +39,13 @@
 			</li>
 		</ul>
 		<form ng-submit="todoList.addTodo()">
-			<input type="text" ng-model="todoList.todoText" size="40" placeholder="Enter Chore here">
-			<input class="btn-primary" type="submit" value="add">
+			<div class="form-group col-lg-12">
+			 <input type="text" class="form-control" id="usr" ng-model="todoList.todoText">
+			<!--<input type="text" ng-model="todoList.todoText" size="40" placeholder="Enter Chore here">-->
+			<button class="btn btn-success" value="Add" type="submit">Add Task</button>
+		</div>
 		</form>
 	</div>
-	</center>
+	</div>
 </body>
 </html>
