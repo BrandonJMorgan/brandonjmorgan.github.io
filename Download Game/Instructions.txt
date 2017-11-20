@@ -1,6 +1,0 @@
-#####################################Always choose to have the game windowed. ########################
-
-
-#####################################Use A and D keys to dodge you move on your own############################
-
-
