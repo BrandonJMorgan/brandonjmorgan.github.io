@@ -25,7 +25,7 @@ function submitForm(e){
   var message = getInputVal('message');
 
   // Save message
-  saveMessage(name, company, email, phone, message);
+  saveMessage(name, email, message);
 
   // Show alert
   document.querySelector('.alert').style.display = 'block';
@@ -45,7 +45,7 @@ function getInputVal(id){
 }
 
 // Save message to firebase
-function saveMessage(name, company, email, phone, message){
+function saveMessage(name, email, message){
   var newMessageRef = messagesRef.push();
   newMessageRef.set({
     name: name,
