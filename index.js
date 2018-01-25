@@ -33,7 +33,7 @@ function submitForm(e){
   // Hide alert after 3 seconds
   setTimeout(function(){
     document.querySelector('.response').style.display = 'none';
-  },3000);
+  },4000);
 
   // Clear form
   document.getElementById('contactForm').reset();
