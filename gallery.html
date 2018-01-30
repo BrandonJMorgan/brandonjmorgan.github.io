@@ -106,6 +106,23 @@ $('img').click(function() {
 });
 </script>
 
+<!-- for mobile-->
+<script type="text/javascript">
+	var image=document.getElementById('img', 'img1');
+
+image.addEventListener('gesturechange',function(e){
+
+    if(e.scale>1){
+        //zoom in 
+        //increase the size of image according to the e.scale
+    }
+
+    else if(e.scale<1){
+        //zoom out 
+        //decrease the size of image according to the e.scale
+    }
+});
+</script>
 
 
 <footer style="margin-top: 30px;"><em>designed/developed by <a href="http://brandonjmorgan.com">Brandon</a></em></footer>
