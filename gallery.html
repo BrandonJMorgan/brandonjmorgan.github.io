@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Art Gallery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<html>
+
+<style type="text/css">
+	.header2{
+		text-align: center;
+	}
+	#img{
+		border-radius: 50%;
+	}
+	#img1{
+		border-radius: 10px;
+	}
+	.wrapper{
+		margin-top: 20px;
+	}
+</style>
+
+
+<div class="wrapper">
+	<div class="container" class="col-md-12">
+		<h2 class="header2">Hover over your gallery images!</h2>
+		<div class="col-md-4">
+			<h2>Img1</h2>
+			<img src="http://via.placeholder.com/300" id="img">
+		</div>
+		<div class="col-md-4">
+			<h2>Img2</h2>
+			<img src="http://via.placeholder.com/300" id="img">
+		</div>
+		<div class="col-md-4">
+			<h2>img3</h2>
+			<img src="http://via.placeholder.com/300" id="img">
+		</div>
+	</div>
+</div>
+<!-- break in between gallary-->
+
+<div class="wrapper">
+	<div class="container">
+		<div class="col-md-12">
+			<h2>Your placement text here</h2>
+		</div>
+	</div>
+</div>
+
+
+<!--Second column-->
+
+<div class="wrapper">
+	<div class="container" class="col-md-12">
+		<h2 class="header2">Hover over your gallery images!</h2>
+		<div class="col-md-4">
+			<h2>Img4</h2>
+			<img src="http://via.placeholder.com/300" id="img1">
+		</div>
+		<div class="col-md-4">
+			<h2>Img5</h2>
+			<img src="http://via.placeholder.com/300" id="img1">
+		</div>
+		<div class="col-md-4">
+			<h2>img6</h2>
+			<img src="http://via.placeholder.com/300" id="img1">
+		</div>
+	</div>
+
+	<!-- out text-->
+	<div class="wrapper">
+	<div class="container">
+		<div class="col-md-12 text-center">
+			<p>If you like this template and would like to work with me then send me a message on my site and ill get back with you asap</p>
+		</div>
+	</div>
+</div>
+
+<!-- enlarge image-->
+<script type="text/javascript">
+	$('img').mouseenter(function() {
+    $(this).css("cursor","pointer");
+    $(this).animate({width: "100%", height: "100%"}, 'slow');
+});
+
+$('img').mouseleave(function() {   
+    $(this).animate({width: "85%"}, 'slow');
+});
+</script>
+
+
+
+<footer style="margin-top: 30px;"><em>designed/developed by <a href="http://brandonjmorgan.com">Brandon</a></em></footer>
+
+	</html>
+</body>
