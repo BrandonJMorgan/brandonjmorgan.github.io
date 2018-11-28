@@ -1,0 +1,17 @@
+﻿.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('https://stmed.net/sites/default/files/audi-wallpapers-31855-6676581.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    
+}
+#box1 {
+    background-color: black;
+    border-radius: 10px;
+    opacity: 0.8;
+    font-size: 100px;
+}
+
