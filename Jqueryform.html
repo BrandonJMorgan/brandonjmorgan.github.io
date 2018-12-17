@@ -3,6 +3,8 @@
 <head>
 	<title></title>
 	<!-- Latest compiled and minified CSS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <!-- jQuery library -->
@@ -17,13 +19,13 @@
 <div id="text" style="margin-bottom: 30vh; " class="text-center">
 	<h2>Hello: </h2>
 </div>
-
+<div class="container">
 <div class="form-group">
       <label for="usr">Add Info:</label>
       <textarea class="form-control" rows="5" id="example-area"></textarea>
       <button class="btn btn-primary" onclick="me_append()">Add stuff</button>
     </div>
-
+	</div>
 <script>
 	function me_append() {
     $('#text').append($('#example-area').val());
